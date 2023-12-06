@@ -1,1 +1,17 @@
 /* add your styles here */
+h1{
+    text-align: center  ;
+}
+
+.parent_div{
+    width:100%;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    justify-items: center;
+    gap: 5vh 2vh;
+
+}
+.image{
+     width: 47vw;
+
+}

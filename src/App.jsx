@@ -24,7 +24,27 @@ const imageData = ()=>{
 }
 
 function App() {
-  // code here
+  let imageArr = imageData()
+  return(
+    <>
+     <h1>Kalvium Gallery</h1>
+     {/* <div className='parent_div'>
+        <img src={imageArr[0].img} className='image' alt="" />
+        <img src={imageArr[0].img} className='image' alt="" />
+        <img src={imageArr[0].img} className='image' alt="" />
+        <img src={imageArr[0].img} className='image' alt="" />
+     </div> */}
+     <div className="parent_div">
+       {
+        imageArr.map(elem=>{
+          return(
+            <img src={elem.img} className='image' alt='elephant'></img>
+          )
+        })
+       }
+     </div>
+    </>
+  )
 }
 
 export default App;
